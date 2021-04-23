@@ -1,5 +1,5 @@
 # weather-dashboard
-Click here to go to the website: <>
+Click here to go to the website: <https://reginaafc.github.io/weather-dashboard/Main/index.html>
 
 ## Description 📝
 
