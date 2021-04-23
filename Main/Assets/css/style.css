@@ -1,0 +1,164 @@
+/* This is for the buttons in the Browsing History */
+.btn2 {
+    background-color: rgb(240, 240, 240);
+    border: none;
+    width: 170px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 40px;
+    margin: 8px;
+    margin-left: 0px;
+}
+
+/* This is for the title in the header */
+h1{
+    margin-left: 30px;
+}
+
+/* This is for the search engine area */
+.body {
+    background: linear-gradient(to right, #afeae5, #4ea37b);
+    height: 160px;
+}
+
+/* Search city header */
+h2{
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+/* This is for the browsing history section */
+aside{
+    float: left;
+    margin: 40px;
+    display: block;
+    height: auto;
+    width: 250px;
+}
+
+/* Browsing history header */
+h3{
+    margin-bottom: 30px;
+}
+
+/* Clear button */
+#clear{
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+/* Showing weather for text */
+h4{
+    font-weight: 100;
+    font-size: 30px;
+    margin: 40px;
+}
+
+/* Search input */
+#city-search{
+    border-radius: 40px;
+    padding: 5px;
+    margin: 0px 2px 0px 15px;
+    width: 250px
+}
+
+span{
+    font-style: italic;
+}
+
+/* Weather section */
+#cards{
+    display: inline-block;
+}
+
+/* 5day forecast */
+#forecast {
+    display: flex;
+}
+
+#weather{
+    padding: 20px;
+    border: solid black 1px;
+    height: fit-content;
+    width: 800px; 
+}
+
+.card{
+   
+    width: 250px;
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(75, 173, 160);
+    color: white;
+}
+
+main{
+    display: block;
+}
+
+h5{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#current-date{
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.p{
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#uv{
+    background-color: #378070;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    font-style: normal;
+}
+
+article i {
+    margin: -15px 0px 15px 20px;
+}
+
+#current-1 , #current-2, #current-3, #current-4, #current-5{
+    height: 50px;
+    width: 50px;
+}
+
+
+@media only screen and (max-width: 1214px) {
+    main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+   #forecast{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+   }
+
+   .card{
+    width: 90%; 
+   }
+
+   #weather{
+    width: 450px;
+ 
+   }
+
+   #cards{
+    display: flex;
+    justify-content: center; 
+   }
+}    
+
+    

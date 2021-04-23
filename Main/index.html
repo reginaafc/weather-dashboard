@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <!-- This is the header section -->
+    <header>
+      <nav class="py-3 bg-white shadow-sm navbar navbar-expand-lg navbar-light">
+      <h1 clas="bg-white py-3 shadow-sm">Weather Dashboard</h1>
+    </header>
+
+    <!-- This is the search engine section -->
+    <section class="text-white body">
+      <div class="container py-4">
+        <div class="row">
+          <div class="mx-auto text-center col-lg-8">
+            <h2>Search City</h2>
+            <form>
+              <i class="fas fa-search"></i>
+              <!-- This is the search input -->
+              <input class="form-input" id= "city-search" placeholder="Enter city..." />
+              <button type="submit" class="btn" id="search-btn">Search</button>
+            </form>
+         </div>
+        </div>
+    </section>
+
+    <main>
+      <!-- This is the Browsing History section -->
+      <aside>
+        <div>
+          <h3>Browsing History:</h3>
+        </div>
+        <div id="History">
+          <!-- Here are displayed the button elements -->
+          <div id="history-ul">
+            
+          </div>
+        </div>
+        <button id="clear">clear</button>
+      </aside>
+
+      <section>
+        <div>
+          <h4>Showing Weather for <span id="input-value"></span></h4>
+        </div>
+      </section>
+
+      <!-- Here is where the results are displayed -->
+      <article id="results">
+
+        <!-- This is the main card -->
+        <section id="cards">
+          <article id="weather">
+            <h5>Los Angeles</h5>
+            <img src="" id="current">
+            <p id="current-date">(3/30/2021)</p>
+            <p class="p">Temperature: <span id="temperature"> </span></p>
+            <p class="p">Wind: <span id="wind">50</span></p>
+            <p class="p">Humidity: <span id="humidity">50</span></p>
+            <!-- UV index -->
+            <p class="p"> UV Index: <span id="uv">4.0</span></p>
+          </article>
+        </section>
+
+        <!-- Here are the 5 mini cards -->
+        <h4>5-Day Forecast: </h4>
+
+        <section id="forecast">
+          
+          <article class="card">
+            <p id="current-date1">(3/30/2021)</p>
+            <img src="" id="current-1">
+            <p>Temperature: <span id="temperature-1"> 70ºF</span></p>
+            <p>Wind: <span id="wind-1">50</span></p>
+            <p>Humidity: <span id="humidity-1">50</span></p>
+            
+          </article>
+
+          <article class="card">
+            <p id="current-date2">(3/30/2021)</p>
+            <img src="" id="current-2">
+            <p>Temperature: <span id="temperature-2"> 70ºF</span></p>
+            <p>Wind: <span id="wind-2">50</span></p>
+            <p>Humidity: <span id="humidity-2">50</span></p>
+            
+          </article>
+
+          <article class="card">
+            <p id="current-date3">(3/30/2021)</p>
+            <img src="" id="current-3">
+            <p>Temperature: <span id="temperature-3"> 70ºF</span></p>
+            <p>Wind: <span id="wind-3">50</span></p>
+            <p>Humidity: <span id="humidity-3">50</span></p>
+            
+          </article>
+
+          <article class="card">
+            <p id="current-date4">(3/30/2021)</p>
+            <img src="" id="current-4">
+            <p>Temperature: <span id="temperature-4"> 70ºF</span></p>
+            <p>Wind: <span id="wind-4">50</span></p>
+            <p>Humidity: <span id="humidity-4">50</span></p>
+            
+          </article>
+
+          <article class="card">
+            <p id="current-date5">(3/30/2021)</p>
+            <img src="" id="current-5">
+            <p>Temperature: <span id="temperature-5"> 70ºF</span></p>
+            <p>Wind: <span id="wind-5">50</span></p>
+            <p>Humidity: <span id="humidity-5">50</span></p>
+    
+          </article>
+
+        </section>
+
+
+       </section>
+     </article>
+    
+
+      
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./Assets/java/javascript.js"></script>
+  </body>
+</html>
+
+
